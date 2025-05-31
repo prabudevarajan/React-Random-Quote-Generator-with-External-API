@@ -13,9 +13,19 @@
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
 .rainbow-btn {
-  margin: 50px auto;
-  width: 400px;
+  /* margin: 10px auto; */
+  /* max-width: 200px; */
   text-align: center;
   position: relative;
   color: #ffffff;
@@ -25,8 +35,8 @@
   display: block;
   z-index: 2;
   overflow: hidden;
-  padding: 8px;
-  height: 80px;
+  padding: 4px;
+  height: 60px;
   cursor: pointer;
 }
 .rainbow-btn:before {
@@ -46,23 +56,30 @@
   );
   background-size: 50% 100%;
 }
+
 .rainbow-btn span {
   position: relative;
   z-index: 2;
   padding: 16px 0;
-  font-size: 26px;
+  font-size: 16px;
   text-decoration: none;
   align-items: center;
-  background: #000;
+  background: #1c9ed5;
   border-radius: 3px;
   display: block;
   justify-content: center;
   box-sizing: border-box;
-
 }
 .rainbow-btn:focus:before,
 .rainbow-btn:hover:before {
   animation: rainbow-btn 0.75s linear infinite;
+}
+.svg-inline--fa {
+  background: #1c9ed5;
+  color: #fff;
+  border-radius: 12px;
+  padding: 12px;
+  margin: 3px;
 }
 
 @keyframes rainbow-btn {
